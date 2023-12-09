@@ -1,13 +1,9 @@
-"use client"
+"use client";
 
-import React from 'react';
+import React from "react";
 
 const Navigation = () => {
-    return (
-        <div>
-
-        </div>
-    );
+    return <div></div>;
 };
 
 export default Navigation;
