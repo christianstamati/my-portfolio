@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-
-const inter = Inter({ subsets: ["latin"] });
+import { ReactNode } from "react";
+import { cabinetGrotesk, generalSans } from "@/lib/fonts";
 
 export const metadata: Metadata = {
     title: "Christian Stamati",
-    description: "Developer with strong interest in creating digital products",
+    description: "Developer",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body className={cabinetGrotesk.className}>
                 <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
                     <div>{children}</div>
                 </ThemeProvider>
