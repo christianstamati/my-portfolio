@@ -1,17 +1,24 @@
-import ThemeToggle from "@/components/theme-toggle";
-
 export default function Home() {
     return (
-        <main className="p-4 pt-2">
-            <ThemeToggle />
-            <div>
-                Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è
-                considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese
-                una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più
-                di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente
-                inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili
-                “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione
-                come Aldus PageMaker, che includeva versioni del Lorem Ipsum.
+        <main className="h-screen overflow-auto">
+            <nav className={"flex justify-center bg-red-200 p-14"}>NAVIGATION</nav>
+            <div className="grid h-full grid-cols-4 grid-rows-3 gap-6 px-16">
+                <div className="col-span-2 row-span-1 flex items-center justify-center rounded-md bg-blue-600">
+                    About Card
+                </div>
+                <div className="col-span-1 row-span-1 flex items-center justify-center rounded-md bg-blue-600">
+                    Download resume
+                </div>
+                <div className="col-span-1 row-span-2 flex items-center justify-center rounded-md bg-blue-600">
+                    Project
+                </div>
+                <div className="col-span-1 row-span-1 flex items-center justify-center rounded-md bg-blue-600">
+                    Youtube
+                </div>
+                <div className="col-span-1 row-span-1 flex items-center justify-center rounded-md bg-blue-600">Map</div>
+                <div className="col-span-1 row-span-2 flex items-center justify-center rounded-md bg-blue-600">
+                    Project
+                </div>
             </div>
         </main>
     );
