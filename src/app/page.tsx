@@ -1,21 +1,23 @@
+"use client";
+import GridLayout from "react-grid-layout";
+
 export default function Home() {
+    const layout = [
+        { i: "a", x: 0, y: 0, w: 1, h: 2, static: true },
+        { i: "b", x: 1, y: 0, w: 3, h: 2, minW: 2, maxW: 4 },
+        { i: "c", x: 4, y: 0, w: 1, h: 2 },
+    ];
     return (
-        <main className="flex h-screen justify-center overflow-auto">
-            {/*The grid container*/}
-            <div className="grid h-fit grid-cols-4 gap-6 bg-red-500">
-                <div className="col-span-2 flex h-[280px] items-center justify-center rounded-xl bg-blue-600">
-                    About Card
-                </div>
-                <div className="flex h-[280px] w-[280px] items-center justify-center rounded-md bg-blue-600">
-                    About Card
-                </div>
-                <div className="flex h-[280px] w-[280px] items-center justify-center rounded-md bg-blue-600">
-                    About Card
-                </div>
-                <div className="flex h-[280px] w-[280px] items-center justify-center rounded-md bg-blue-600">
-                    About Card
-                </div>
+        <GridLayout className="layout" layout={layout} cols={12} rowHeight={30} width={1200}>
+            <div className="bg-gray-400" key="a">
+                a
             </div>
-        </main>
+            <div className="bg-gray-400" key="b">
+                b
+            </div>
+            <div className="bg-gray-400" key="c">
+                c
+            </div>
+        </GridLayout>
     );
 }
