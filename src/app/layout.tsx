@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "react-grid-layout/css/styles.css";
-import "react-resizable/css/styles.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ReactNode } from "react";
 import { cabinetGrotesk, generalSans } from "@/lib/fonts";
