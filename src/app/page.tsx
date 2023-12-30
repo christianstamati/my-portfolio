@@ -44,7 +44,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="my-24 flex items-center justify-center">
+            <section className="my-12 flex items-center justify-center">
                 <Avatar />
             </section>
         </main>
