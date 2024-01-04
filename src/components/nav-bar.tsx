@@ -1,21 +1,31 @@
+"use client";
 import React from "react";
-import Logo from "@/components/logo";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { navItems } from "@/lib/data";
+import { usePathname } from "next/navigation";
+
+const NavItem = (props: { active: boolean; icon: React.ReactNode; name?: string; path: string }) => {
+    return (
+        <Link
+            className={`rounded-xl hover:bg-[#F8F8F8] hover:text-neutral-800 ${
+                props.active
+                    ? "bg-[#F8F8F8] p-3 text-neutral-800 shadow-sm ring-[0.05rem] ring-gray-200"
+                    : "p-3 text-neutral-400"
+            }`}
+            href={props.path}>
+            {React.cloneElement(props.icon as React.ReactElement, { size: 24 })}
+        </Link>
+    );
+};
 
 const NavBar = () => {
+    const pathname = usePathname();
     return (
-        <header className="fixed z-50 flex w-full items-center justify-between bg-gray-200 p-4 px-16">
-            <Logo size={"32"} color={"black"} />
-
-            <nav className={"flex w-full justify-end gap-4 px-4"}>
-                <Link href={"/"}>home</Link>
-                <Link href={"/"}>about</Link>
-                <Link href={"/"}>blog</Link>
-            </nav>
-
-            <Button>Contact me</Button>
-        </header>
+        <nav className="z-50 flex flex-row justify-center gap-2 border-[0.05rem] border-gray-200 bg-white p-2 sm:h-full sm:flex-col">
+            {navItems.map((x, idx) => (
+                <NavItem key={idx} active={pathname === x.path} icon={x.icon} path={x.path} />
+            ))}
+        </nav>
     );
 };
 

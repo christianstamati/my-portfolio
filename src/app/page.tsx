@@ -8,9 +8,13 @@ import Card from "@/components/card";
 import ContactForm from "@/components/contact-form";
 import Footer from "@/components/footer";
 
-export default function Home() {
+export default function HomePage() {
+    return <div>HOME</div>;
+}
+
+function HomePageBackup() {
     return (
-        <main>
+        <div>
             <section className="h-screen">
                 <video
                     className="h-full w-full object-cover"
@@ -20,7 +24,6 @@ export default function Home() {
                     loop
                     muted></video>
             </section>
-
             <section className="flex justify-center">
                 <Container>
                     <div className="md:grid md:grid-cols-12">
@@ -48,11 +51,9 @@ export default function Home() {
                     </div>
                 </Container>
             </section>
-
             <section className="my-12 flex items-center justify-center">
                 <Avatar />
             </section>
-
             <section className="my-8 flex flex-col items-center justify-center">
                 <h3 className="my-8 text-center text-2xl">Selected Projects</h3>
                 <Container>
@@ -79,6 +80,6 @@ export default function Home() {
                 </div>
             </section>
             <Footer />
-        </main>
+        </div>
     );
 }
