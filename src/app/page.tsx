@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function HomePage() {
     return (
-        <div className="flex w-full flex-col items-center justify-center">
+        <div className="flex w-full flex-col items-center">
             <div className="flex w-full max-w-[1280px] flex-col gap-y-4 px-4 py-16">
                 <div className="flex text-neutral-400">
                     <MapPin className="mr-2" />
