@@ -9,7 +9,15 @@ import ContactForm from "@/components/contact-form";
 import Footer from "@/components/footer";
 
 export default function HomePage() {
-    return <div>HOME</div>;
+    return (
+        <div className="flex w-full items-center justify-center border-b-[0.05rem] border-gray-200 py-16">
+            <div className="w-full max-w-[1280px] px-4">
+                <h1 className="text-4xl font-medium leading-tight md:text-5xl">
+                    Building apps with <br /> unity, unreal and react.
+                </h1>
+            </div>
+        </div>
+    );
 }
 
 function HomePageBackup() {

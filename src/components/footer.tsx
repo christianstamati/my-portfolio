@@ -10,11 +10,11 @@ const Footer = () => {
     const pathname = usePathname();
     return (
         <Container className="bg-gray-50">
-            <div className="my-40 grid gap-y-8 sm:grid-cols-2  xl:grid-cols-4">
+            <div className="my-20 grid gap-y-8 sm:my-40 sm:grid-cols-2  xl:grid-cols-4">
                 <div>
                     <h4 className="mb-2 text-xl font-medium">Christian Stamati</h4>
                     <p className="text-sm">
-                        Built with{" "}
+                        Made with{" "}
                         <Link className="hover:text-selection underline" target="_blank" href="https://nextjs.org/">
                             Next.js
                         </Link>{" "}
@@ -28,11 +28,11 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="flex flex-col gap-y-4">
-                    <h4 className="text-xs font-medium tracking-widest text-gray-400">PAGES</h4>
+                    <h4 className="text-xs font-bold tracking-widest text-gray-400">PAGES</h4>
                     {navItems.map((x, idx) => (
                         <Link
                             key={idx}
-                            className={`text-md hover:text-selection font-medium ${
+                            className={`text-md hover:text-selection w-fit font-medium ${
                                 x.path === pathname ? "text-selection" : "text-neutral-600"
                             }`}
                             href={x.path}>
@@ -41,12 +41,12 @@ const Footer = () => {
                     ))}
                 </div>
                 <div className="flex flex-col gap-y-4">
-                    <h4 className="text-xs font-medium tracking-widest text-gray-400">SOCIALS</h4>
+                    <h4 className="text-xs font-bold tracking-widest text-gray-400">SOCIALS</h4>
                     {socials.map((x, idx) => (
                         <Link
                             target="_blank"
                             key={idx}
-                            className="text-md hover:text-selection flex gap-x-3 font-medium text-neutral-600"
+                            className="text-md hover:text-selection flex w-fit gap-x-3 font-medium text-neutral-600"
                             href={x.path}>
                             {React.cloneElement(x.icon as React.ReactElement, { size: 21 })}
                             <p>{x.name}</p>
@@ -54,7 +54,7 @@ const Footer = () => {
                     ))}
                 </div>
                 <div className="flex flex-col gap-y-4">
-                    <h4 className="text-xs font-medium tracking-widest text-gray-400">NEWSLETTER</h4>
+                    <h4 className="text-xs font-bold tracking-widest text-gray-400">NEWSLETTER</h4>
                     <Newsletter />
                 </div>
             </div>

@@ -1,8 +1,8 @@
 import React from "react";
-import { Home, User, ScrollText, Briefcase, MessageCircle, Youtube, Instagram, Linkedin, Github } from "lucide-react";
+import { Home, User, File, Briefcase, MessageCircle, Youtube, Instagram, Linkedin, Github } from "lucide-react";
 
 export const appInfo = {
-    name: "Portfolio",
+    name: "Personal Portfolio",
     credits: "Christian Stamati",
     developer_url: "https://www.christianstamati.com/",
     version: 0.1,
@@ -21,7 +21,7 @@ export const navItems = [
     },
     {
         name: "Resume",
-        icon: React.createElement(ScrollText),
+        icon: React.createElement(File),
         path: "/resume",
     },
     {
