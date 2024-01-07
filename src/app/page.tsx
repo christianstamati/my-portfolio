@@ -1,12 +1,7 @@
 import React from "react";
-import Feature from "@/components/feature";
-import { ChevronRight, Gamepad2, MapPin, Package } from "lucide-react";
-import Avatar from "@/components/avatar";
-import Container from "@/components/container";
+import { ChevronRight, MapPin } from "lucide-react";
 import { projects } from "@/lib/data";
 import Card from "@/components/card";
-import ContactForm from "@/components/contact-form";
-import Footer from "@/components/footer";
 import Separator from "@/components/separator";
 import Link from "next/link";
 
