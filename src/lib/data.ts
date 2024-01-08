@@ -82,3 +82,72 @@ export const projects = [
         category: "app",
     },
 ] as const;
+
+export const resume = {
+    location: "VENICE, ITALY",
+    name: "Christian",
+    surname: "Stamati",
+    experiences: [
+        {
+            jobTitle: "Software Developer",
+            company: "We Wear",
+            description:
+                "Lorem Ipsumè un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta",
+            time: "nov 2020 — Present",
+        },
+        {
+            jobTitle: "Technical Artist",
+            company: "NABA",
+            description:
+                "Lorem Ipsumè un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta",
+            time: "feb 2021 — mag 2021",
+        },
+        {
+            jobTitle: "Freelance Videographer",
+            company: "Self-employed worker",
+            description:
+                "Lorem Ipsumè un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta",
+            time: "set 2018 — nov 2020",
+        },
+    ] as const,
+    educations: [
+        {
+            school: "NABA",
+            study: "Bachelor degree in New Technologies",
+            description:
+                "Lorem Ipsumè un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta",
+            time: "2017 — 2020",
+        },
+        {
+            school: "Istituto Salesiano San Marco - ITT",
+            study: "Graphic Design & Communication",
+            description:
+                "Lorem Ipsumè un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta",
+            time: "2014 — 2017",
+        },
+        {
+            school: "Istituto Salesiano San Marco - CFP",
+            study: "Graphic and printing equipment operator",
+            description:
+                "Lorem Ipsumè un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta",
+            time: "2011 — 2014",
+        },
+    ] as const,
+    skills: [
+        {
+            name: "UI/UX design",
+            description:
+                "Lorem Ipsumè un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta",
+        },
+        {
+            name: "Programming",
+            description:
+                "Lorem Ipsumè un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta",
+        },
+        {
+            name: "3D",
+            description:
+                "Lorem Ipsumè un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta",
+        },
+    ] as const,
+} as const;
