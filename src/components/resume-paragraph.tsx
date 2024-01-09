@@ -10,7 +10,7 @@ type ResumeParagraphProps = {
 
 const ResumeParagraph = (props: ResumeParagraphProps) => {
     return (
-        <div className="flex max-w-xl flex-col gap-y-4">
+        <div className="flex max-w-2xl flex-col gap-y-4">
             <div>
                 <div className="flex justify-between">
                     <h3 className="text-xl font-semibold">{props.title}</h3>

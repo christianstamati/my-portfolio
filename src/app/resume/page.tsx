@@ -16,14 +16,14 @@ export default function ResumePage() {
                     <h1 className="text-3xl font-medium md:text-5xl md:leading-tight">Christian Stamati</h1>
                 </div>
 
-                <Button className="rounded-2xl p-7 text-xl font-normal" variant={"outline"}>
+                <Button className="text-md rounded-2xl p-7 font-normal md:text-xl" variant={"outline"}>
                     <ArrowDownToLine className="mr-2" size={21} />
                     <p>Download</p>
                 </Button>
             </div>
             <Separator />
             <div className="flex w-full max-w-[1280px] flex-col gap-y-20 px-4 py-16">
-                <div className="flex w-full justify-between">
+                <div className="flex w-full flex-col justify-between gap-4 md:flex-row">
                     <p className="text-sm font-medium tracking-widest text-neutral-400">EXPERIENCE</p>
                     <div className="flex flex-col gap-y-12">
                         {resume.experiences.map((x, index) => (
@@ -38,7 +38,7 @@ export default function ResumePage() {
                     </div>
                 </div>
 
-                <div className="flex w-full justify-between">
+                <div className="flex w-full flex-col justify-between gap-4 md:flex-row">
                     <p className="text-sm font-medium tracking-widest text-neutral-400">EDUCATION</p>
                     <div className="flex flex-col gap-y-12">
                         {resume.educations.map((x, index) => (
@@ -53,7 +53,7 @@ export default function ResumePage() {
                     </div>
                 </div>
 
-                <div className="flex w-full justify-between">
+                <div className="flex w-full flex-col justify-between gap-4 md:flex-row">
                     <p className="text-sm font-medium tracking-widest text-neutral-400">SKILLS</p>
                     <div className="flex flex-col gap-y-12">
                         {resume.skills.map((x, index) => (
