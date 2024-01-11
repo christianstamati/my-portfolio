@@ -37,7 +37,6 @@ export default function ResumePage() {
                         ))}
                     </div>
                 </div>
-
                 <div className="flex w-full flex-col justify-between gap-4 md:flex-row">
                     <p className="text-sm font-medium tracking-widest text-neutral-400">EDUCATION</p>
                     <div className="flex flex-col gap-y-12">
@@ -52,7 +51,6 @@ export default function ResumePage() {
                         ))}
                     </div>
                 </div>
-
                 <div className="flex w-full flex-col justify-between gap-4 md:flex-row">
                     <p className="text-sm font-medium tracking-widest text-neutral-400">SKILLS</p>
                     <div className="flex flex-col gap-y-12">
