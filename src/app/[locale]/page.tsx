@@ -4,8 +4,11 @@ import { projects } from "@/lib/data";
 import Card from "@/components/card";
 import Separator from "@/components/separator";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function HomePage() {
+    const t = useTranslations("Index");
+
     return (
         <div className="flex w-full flex-col items-center">
             <div className="flex w-full max-w-[1280px] flex-col gap-y-4 px-4 py-16">
