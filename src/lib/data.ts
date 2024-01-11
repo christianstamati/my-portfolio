@@ -119,14 +119,14 @@ export const resume = {
             time: "2017 — 2020",
         },
         {
-            school: "Istituto Salesiano San Marco - ITT",
+            school: "ISSM",
             study: "Graphic Design & Communication",
             description:
                 "Extended my educational journey at ISSM, focusing on advanced studies. Explored predominantly theoretical modules, delving into significant communication case studies and acquiring expertise in crafting brand identities",
             time: "2014 — 2017",
         },
         {
-            school: "Istituto Salesiano San Marco - CFP",
+            school: "ISSM",
             study: "Graphic and printing equipment operator",
             description:
                 "Successfully completed a comprehensive three-year diploma program, graduating as a Graphic Operator. Engaged in predominantly practical lectures with a strong emphasis on mastering graphic design software.",
