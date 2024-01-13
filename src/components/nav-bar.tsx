@@ -3,6 +3,8 @@ import React from "react";
 import Link from "next/link";
 import { navItems } from "@/lib/data";
 import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
+import { formatPath } from "@/lib/format-path";
 
 const NavItem = (props: { active: boolean; icon: React.ReactNode; name?: string; path: string }) => {
     return (
@@ -27,10 +29,18 @@ const NavItem = (props: { active: boolean; icon: React.ReactNode; name?: string;
 
 const NavBar = () => {
     const pathname = usePathname();
+    const locale = useLocale();
+
     return (
         <nav className="z-50 flex flex-row justify-center gap-3 border-[0.05rem] border-gray-200 bg-white p-3 sm:gap-8 xl:h-full xl:flex-col xl:gap-3">
             {navItems.map((x, idx) => (
-                <NavItem key={idx} active={pathname === x.path} icon={x.icon} path={x.path} name={x.name} />
+                <NavItem
+                    key={idx}
+                    active={pathname === formatPath(x.path, locale)}
+                    icon={x.icon}
+                    path={formatPath(x.path, locale)}
+                    name={x.name}
+                />
             ))}
         </nav>
     );

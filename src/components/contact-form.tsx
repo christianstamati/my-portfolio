@@ -9,7 +9,7 @@ const ContactForm = () => {
         <form className="flex w-full max-w-xl flex-col gap-4">
             <div className="flex flex-col gap-4 sm:flex-row">
                 <div className="grid w-full items-center gap-1.5">
-                    <Label htmlFor="name">Your name</Label>
+                    <Label htmlFor="name">Your websiteName</Label>
                     <Input type={"text"} required id="name" placeholder={"John Doe"} />
                 </div>
                 <div className="grid w-full items-center gap-1.5">

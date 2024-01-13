@@ -1,5 +1,27 @@
 {
-  "Index": {
-    "title": "Hello World!"
+  "Common": {
+    "location": "Venice, Italy",
+    "emailPlaceholder": "Your email",
+    "subscribe": "Subscribe"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "resume": "Resume",
+    "projects": "Projects",
+    "contact": "Contacts"
+  },
+  "Messages": {
+    "homeHeader": "Building digital products with Unity, Unreal Engine and React."
+  },
+  "Footer": {
+    "madeWith": "Made with ",
+    "pages": "pages",
+    "social": "social",
+    "newsletter": "newsletter",
+    "youtube": "Youtube",
+    "linkedin": "Linkedin",
+    "instagram": "Instagram",
+    "github": "Github"
   }
 }

@@ -14,7 +14,7 @@ export default function LocaleSwitch() {
 
     return (
         <div>
-            <select value={locale} onChange={switchLocale}>
+            <select className={"rounded-full p-1"} value={locale} onChange={switchLocale}>
                 {locales.map((loc) => (
                     <option key={loc} value={loc}>
                         {localeNames[loc]}

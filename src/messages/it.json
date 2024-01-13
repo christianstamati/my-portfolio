@@ -1,5 +1,27 @@
 {
-  "Index": {
-    "title": "Ciao Mondo!"
+  "Common": {
+    "location": "Venezia, Italia",
+    "emailPlaceholder": "La tua email",
+    "subscribe": "Sottoscrivi"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "resume": "Resume",
+    "projects": "Projects",
+    "contact": "Contacts"
+  },
+  "Messages": {
+    "homeHeader": "Costruendo prodotti digitali con\nUnity, Unreal Engine e React."
+  },
+  "Footer": {
+    "madeWith": "Sviluppato con",
+    "pages": "pagine",
+    "social": "social",
+    "newsletter": "newsletter",
+    "youtube": "Youtube",
+    "linkedin": "Linkedin",
+    "instagram": "Instagram",
+    "github": "Github"
   }
 }
