@@ -2,14 +2,16 @@
   "Common": {
     "location": "Venezia, Italia",
     "emailPlaceholder": "La tua email",
-    "subscribe": "Sottoscrivi"
+    "subscribe": "Sottoscrivi",
+    "learnMore": "Scopri di più",
+    "seeAllPortfolioProjects":"Vedi tutti i progetti del portfolio"
   },
   "Nav": {
     "home": "Home",
     "about": "About",
     "resume": "Resume",
     "projects": "Projects",
-    "contact": "Contacts"
+    "contact": "Contact"
   },
   "Messages": {
     "homeHeader": "Costruendo prodotti digitali con\nUnity, Unreal Engine e React."
@@ -23,5 +25,17 @@
     "linkedin": "Linkedin",
     "instagram": "Instagram",
     "github": "Github"
+  },
+  "Projects": {
+    "header": "Scopri i miei progetti",
+    "filterBy": "Filtra per"
+  },
+  "Contact": {
+    "header": "Mettiamoci in contatto",
+    "nameLabel": "Il tuo nome",
+    "emailLabel": "La tua email",
+    "messageLabel": "Il tuo messaggio",
+    "messagePlaceholder": "Scrivi qui il tuo messaggio.",
+    "sendButton": "Invia messaggio"
   }
 }

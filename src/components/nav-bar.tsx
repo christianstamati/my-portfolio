@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { navItems } from "@/lib/data";
 import { usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { formatPath } from "@/lib/format-path";
 
 const NavItem = (props: { active: boolean; icon: React.ReactNode; name?: string; path: string }) => {
@@ -29,8 +29,8 @@ const NavItem = (props: { active: boolean; icon: React.ReactNode; name?: string;
 
 const NavBar = () => {
     const pathname = usePathname();
+    const t = useTranslations("Nav");
     const locale = useLocale();
-
     return (
         <nav className="z-50 flex flex-row justify-center gap-3 border-[0.05rem] border-gray-200 bg-white p-3 sm:gap-8 xl:h-full xl:flex-col xl:gap-3">
             {navItems.map((x, idx) => (
@@ -39,7 +39,7 @@ const NavBar = () => {
                     active={pathname === formatPath(x.path, locale)}
                     icon={x.icon}
                     path={formatPath(x.path, locale)}
-                    name={x.name}
+                    name={t(x.name)}
                 />
             ))}
         </nav>

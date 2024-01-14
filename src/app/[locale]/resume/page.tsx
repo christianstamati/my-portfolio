@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export default function ResumePage() {
     return (
         <div className="flex w-full flex-col items-center">
-            <div className="flex w-full max-w-[1280px] items-end justify-between gap-y-4 px-4 py-16">
+            <div className="flex w-full max-w-[1000px] items-end justify-between gap-y-4 px-4 py-16">
                 <div>
                     <div className="flex text-neutral-400">
                         <MapPin className="mr-2" />
@@ -22,7 +22,7 @@ export default function ResumePage() {
                 </Button>
             </div>
             <Separator />
-            <div className="flex w-full max-w-[1280px] flex-col gap-y-20 px-4 py-16">
+            <div className="flex w-full max-w-[1000px] flex-col gap-y-20 px-4 py-16">
                 <div className="flex w-full flex-col justify-between gap-4 md:flex-row">
                     <p className="text-sm font-medium tracking-widest text-neutral-400">EXPERIENCE</p>
                     <div className="flex flex-col gap-y-12">

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { MapPin, User } from "lucide-react";
+import { User } from "lucide-react";
 import { cabinetGrotesk } from "@/lib/fonts";
 export default function AboutPage() {
     return (
@@ -15,23 +15,29 @@ export default function AboutPage() {
                     quality={100}
                 />
             </div>
-            <div className="flex w-full max-w-[1280px] flex-col gap-y-4 px-4 py-16">
+            <div className="flex w-full max-w-[1000px] flex-col gap-y-4 px-4 py-16">
                 <div className="flex items-center text-neutral-400">
                     <User className="mr-2" size={21} />
                     <p className="text-xs font-medium tracking-widest">ABOUT ME</p>
                 </div>
                 <h1 className="text-3xl font-medium md:text-5xl md:leading-tight">Let me introduce myself</h1>
                 <p className={`${cabinetGrotesk.className} font-normal`}>
-                    I’m a developer based in Italy with an avid passion for building digital products. I love the entire
-                    process: from the initial idea from the steak holders, to the UX/UI design and finally to the actual
-                    code implementation of the solution. <br /> I studied as a Graphic Designer at ISSM high-school in
-                    Venice and then I moved in Milan where I got my bachelor degree at NABA as a Creative Technologist.
-                    During the university years I learned to work with Unity and Unreal Engine and after graduation I
-                    was selected to participate at a virtual production project as a Technical Artist, it was a great
-                    opportunity working on such a big project. <br /> As a developer, I strive to offer a functional and
-                    professional solution. I often like to plan with the steak holders the architecture of the system so
-                    we can come out with the best possible design solution. I would prefer to let my work speak for
-                    itself so feel free to have a look through.
+                    I am a developer based in Italy with a strong passion for creating digital products. I thoroughly
+                    enjoy the entire process, starting from the initial idea presented by stakeholders, then moving on
+                    to UX/UI design, and finally, implementing the solution through code.
+                    <br />
+                    <br />
+                    My educational background includes studying Graphic Design at ISSM high-school in Venice, followed
+                    by earning my bachelor&apos;s degree in Creative Technology at NABA in Milan. During my university
+                    years, I gained experience working with Unity and Unreal Engine. After graduation, I had the
+                    privilege of being selected to participate in a virtual production project as a Technical Artist,
+                    which was a valuable opportunity to contribute to a significant project.
+                    <br />
+                    <br />
+                    As a developer, I am dedicated to delivering functional and professional solutions. I often
+                    collaborate closely with stakeholders to plan the system&apos;s architecture, aiming to achieve the
+                    best possible design solution. Rather than describing my skills further, I prefer to showcase my
+                    work for your evaluation. Feel free to take a look at my portfolio.
                 </p>
             </div>
         </div>

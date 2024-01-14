@@ -13,27 +13,27 @@ export const appInfo = {
 
 export const navItems = [
     {
-        name: "Home",
+        name: "home",
         icon: React.createElement(Home),
         path: "/{locale}",
     },
     {
-        name: "About",
+        name: "about",
         icon: React.createElement(User),
         path: "/{locale}/about",
     },
     {
-        name: "Resume",
+        name: "resume",
         icon: React.createElement(File),
         path: "/{locale}/resume",
     },
     {
-        name: "Projects",
+        name: "projects",
         icon: React.createElement(Briefcase),
         path: "/{locale}/projects",
     },
     {
-        name: "Contact",
+        name: "contact",
         icon: React.createElement(MessageCircle),
         path: "/{locale}/contact",
     },
@@ -106,7 +106,7 @@ export const resume = {
             time: "feb 2021 — mag 2021",
         },
         {
-            jobTitle: "Freelance Videographer",
+            jobTitle: "Videographer",
             company: "Self-employed worker",
             description:
                 "Wrote screenplays at university. Worked with Adobe Premiere and Resolve to edit and grade the videos for social media. Had experience with professional cameras and lights in studio and shoot numerous videos on gimbal.",
@@ -116,7 +116,7 @@ export const resume = {
     educations: [
         {
             school: "NABA",
-            study: "Bachelor degree in New Technologies",
+            study: "Creative Technologist",
             description:
                 "Resided in Milan for three years, where I pursued a degree in Creative Technologies at NABA, engaging in a new program comprising three key modules: Motion Graphics and VFX, Game Development, and 3D Modeling.",
             time: "2017 — 2020",
@@ -154,3 +154,18 @@ export const resume = {
         },
     ] as const,
 } as const;
+
+export const projectFilters = [
+    {
+        displayName: "app",
+        value: "",
+    },
+    {
+        displayName: "experiments",
+        value: "",
+    },
+    {
+        displayName: "website",
+        value: "",
+    },
+];

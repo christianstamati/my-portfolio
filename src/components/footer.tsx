@@ -11,7 +11,7 @@ import { formatPath } from "@/lib/format-path";
 
 const Footer = () => {
     const pathname = usePathname();
-    const t = useTranslations("Footer");
+    const t = useTranslations();
     const locale = useLocale();
     return (
         <div className="flex w-full justify-center bg-gray-50 px-4">
@@ -23,7 +23,7 @@ const Footer = () => {
                                 {appInfo.credits.name} {appInfo.credits.surname}
                             </h4>
                             <p className="text-sm">
-                                {t("madeWith")}{" "}
+                                {t("Footer.madeWith")}{" "}
                                 <Link
                                     className="underline hover:text-selection"
                                     target="_blank"
@@ -42,7 +42,9 @@ const Footer = () => {
                         <LocaleSwitch />
                     </div>
                     <div className="flex flex-col gap-y-4">
-                        <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400">{t("pages")}</h4>
+                        <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400">
+                            {t("Footer.pages")}
+                        </h4>
                         {navItems.map((x, idx) => (
                             <Link
                                 key={idx}
@@ -50,12 +52,14 @@ const Footer = () => {
                                     formatPath(x.path, locale) === pathname ? "text-selection" : "text-neutral-600"
                                 }`}
                                 href={formatPath(x.path, locale)}>
-                                {x.name}
+                                {t(`Nav.${x.name}`)}
                             </Link>
                         ))}
                     </div>
                     <div className="flex flex-col gap-y-4">
-                        <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400">{t("social")}</h4>
+                        <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400">
+                            {t("Footer.social")}
+                        </h4>
                         {socials.map((x, idx) => (
                             <Link
                                 target="_blank"
@@ -63,12 +67,14 @@ const Footer = () => {
                                 className="text-md flex w-fit gap-x-3 font-medium text-neutral-600 hover:text-selection"
                                 href={x.path}>
                                 {React.cloneElement(x.icon as React.ReactElement, { size: 21 })}
-                                <p>{t(x.name)}</p>
+                                <p>{t(`Footer.${x.name}`)}</p>
                             </Link>
                         ))}
                     </div>
                     <div className="flex flex-col gap-y-4">
-                        <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400">{t("newsletter")}</h4>
+                        <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400">
+                            {t("Footer.newsletter")}
+                        </h4>
                         <Newsletter />
                     </div>
                 </div>
